@@ -1,0 +1,25 @@
+.btn{
+    width: 152px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 2px solid #4FFBF9;
+    color: $blue;
+    text-align: center;
+    font-size: 16px;
+    transition: all .4s;
+    position: relative;
+    &:hover{
+        
+        &:before{
+            content: '';
+            position: absolute;
+            filter: blur(2px);
+            top: -2px;
+            bottom: -2px;
+            left: -2px;
+            right: -2px;
+            border: 2px solid #4FFBF9;
+        }
+    }
+}

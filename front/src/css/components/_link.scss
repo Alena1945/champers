@@ -1,0 +1,12 @@
+a {
+  transition: color 0.4s;
+
+  &:hover {
+    transition: 0.4s;
+  }
+
+  &:focus, &:active {
+    outline: none;
+  }
+}
+

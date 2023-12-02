@@ -1,0 +1,71 @@
+//base
+@mixin pseudo-element($content: "", $display: block, $pos: absolute) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+
+// position and transform
+@mixin translate-x() {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin translate-y() {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin translate-center() {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+// image
+@mixin bg-settings($repeat:no-repeat,$position:50%,$size:cover) {
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+@mixin img-cover() {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// media
+
+@mixin note {
+  @media screen and (max-width: $note) {
+    @content;
+  }
+}
+
+@mixin note-mini {
+  @media screen and (max-width: $note-mini) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin sm-phone {
+  @media screen and (max-width: $sm-phone) {
+    @content;
+  }
+}
+
+

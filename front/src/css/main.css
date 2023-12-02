@@ -1,0 +1,818 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos&family=Montserrat:wght@400&display=swap");
+@font-face {
+  font-family: "Lovelace Trial";
+  src: url("../../static/fonts/Lovelace-Medium.ttf");
+  font-weight: 500;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 132.2%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Lovelace Trial";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 132.2%;
+  letter-spacing: 2px;
+}
+
+span {
+  font-family: "Lovelace Trial";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132.2%; /* 21.152px */
+  letter-spacing: 1.6px;
+}
+
+h1, .h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: "Lovelace Trial";
+  font-weight: 500;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+h2, .h2 {
+  font-size: 48px;
+  color: #543B53;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+h3, .h3 {
+  font-size: 36px;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+  background: #FBFBFB;
+  font-style: normal;
+  line-height: 132.2%;
+}
+
+div, a, button, pre {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 132.2%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  color: #000;
+  background: none;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+pre {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: initial;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none;
+}
+
+.btn {
+  width: 152px;
+  height: 61px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 2px solid #4FFBF9;
+  color: #4FFBF9;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.4s;
+  position: relative;
+}
+.btn:hover:before {
+  content: "";
+  position: absolute;
+  filter: blur(2px);
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  border: 2px solid #4FFBF9;
+}
+
+a {
+  transition: color 0.4s;
+}
+a:hover {
+  transition: 0.4s;
+}
+a:focus, a:active {
+  outline: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .content-active {
+    display: block !important;
+  }
+  .how-we-work__content {
+    display: none;
+  }
+}
+.main-header {
+  background: #543B53;
+  height: 80px;
+  width: 100%;
+}
+.main-header .header-content {
+  height: 80px;
+  width: 100%;
+}
+.main-header .header-content .logo {
+  margin-right: 75px;
+  padding: 16px 0px;
+}
+.main-header .header-content .nav-list {
+  gap: 60px;
+  margin-right: 101px;
+  padding: 30px 0px;
+}
+.main-header .header-content .nav-list .nav-item {
+  color: #F5F5F5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.main-header .header-content .nav-list .nav-item:hover {
+  color: #4FFBF9;
+}
+.main-header .header-content .social {
+  gap: 20px;
+  padding: 20px 0px;
+}
+.main-header .header-content .social a svg {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.main-header .header-content .social a:hover svg circle {
+  stroke: #fff;
+  transition: all 0.3s ease-in;
+}
+.main-header .header-content .social a:hover svg path {
+  fill: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.front-page .main-banner {
+  width: 100%;
+  height: 820px;
+  background-image: url(../../static/img/main-banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.front-page .main-banner .main-banner-content .main-logo {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  margin-bottom: 22px;
+}
+.front-page .main-banner .main-banner-content .calculate-container {
+  width: 596px;
+  height: 257px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.27);
+  padding: 22px 23px 43px 23px;
+  gap: 43px;
+}
+.front-page .main-banner .main-banner-content .calculate-container p {
+  color: #FFF;
+}
+.front-page .sparkle .sparkle-content-row {
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 30px;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col {
+  margin-top: 50px;
+  position: relative;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col svg {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col h2 {
+  text-transform: none;
+  padding-bottom: 8px;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #543B53;
+  margin-bottom: 12px;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col p {
+  color: #8C8C8C;
+  margin-bottom: 50px;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col .sparkle-desc {
+  gap: 65px;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col .sparkle-desc .sparkle-desc-col {
+  gap: 18px;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col .sparkle-desc .sparkle-desc-col:last-child span {
+  width: 200px;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col .sparkle-desc .sparkle-desc-col .img {
+  width: 165px;
+  height: 165px;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col .sparkle-desc .sparkle-desc-col .img img {
+  border-radius: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col .sparkle-desc .sparkle-desc-col .img:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 6px solid #4FFBF9;
+  border-radius: 100px;
+  filter: blur(1.5px);
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col .sparkle-desc .sparkle-desc-col h3 {
+  color: #414141;
+  text-transform: none;
+}
+.front-page .sparkle .sparkle-content-row .sparkle-content-col .sparkle-desc .sparkle-desc-col span {
+  color: #414141;
+  text-align: center;
+  width: 160px;
+}
+.front-page .offers {
+  background-image: url(../../static/img/offers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 475px;
+  padding: 126px 0px 197px 0px;
+}
+.front-page .offers .offers-col {
+  gap: 28px;
+}
+.front-page .offers .offers-col h2 {
+  text-transform: none;
+}
+.front-page .offers .offers-col a {
+  gap: 11px;
+  width: 241px;
+  height: 61px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #543B53;
+  color: #4FFBF9;
+  font-size: 16px;
+  justify-content: center;
+  position: relative;
+}
+.front-page .offers .offers-col a:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #4FFBF9;
+  border-radius: 6px;
+}
+.front-page .advantages {
+  background-color: #543B53;
+}
+.front-page .advantages .advantages-col {
+  padding: 50px 0px 121px 0px;
+}
+.front-page .advantages .advantages-col h2 {
+  color: #FFF;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.front-page .advantages .advantages-col .subtitle {
+  color: #F5F5F5;
+  margin-bottom: 76px;
+}
+.front-page .advantages .advantages-col .advantages-row {
+  gap: 39px;
+  width: 70vw;
+}
+.front-page .advantages .advantages-col .advantages-row .swiper-slide {
+  display: flex;
+  gap: 39px;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-title h3 {
+  color: #FFF;
+  width: 372.704px;
+  text-transform: none;
+  margin-bottom: 18px;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-title .advantages-content {
+  color: #FFF;
+  width: 455px;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .nav-pag .navigation {
+  gap: 15px;
+  margin-bottom: 23px;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .nav-pag .navigation .swiper-button-prev,
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .nav-pag .navigation .swiper-button-next {
+  position: initial;
+  width: 40px;
+  height: 40px;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .nav-pag .navigation .swiper-button-prev::after,
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .nav-pag .navigation .swiper-button-next::after {
+  content: none;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .nav-pag .pagination {
+  margin-bottom: 53px;
+  position: initial;
+  text-align: start;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .nav-pag .pagination span {
+  font-family: "Montserrat";
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .nav-pag .swiper-pagination-bullet {
+  background-color: transparent !important;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .photo-nav {
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 13px;
+  grid-column-gap: 12px;
+  width: 389px;
+  height: 254px;
+  flex-shrink: 0;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .photo-nav .photo-nav-wrapp {
+  position: relative;
+  width: 121px;
+  height: 121px;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .photo-nav .photo-nav-wrapp img {
+  width: 121px;
+  height: 121px;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-col-content .advantages-col-navigation .photo-nav .photo-nav-wrapp span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #FFF;
+  width: 94px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  padding-left: 12px;
+  padding-bottom: 12px;
+  letter-spacing: 0px;
+}
+.front-page .advantages .advantages-col .advantages-row .advantages-photo {
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
+  width: 804px;
+  height: 742px;
+  flex-shrink: 0;
+}
+.front-page .even-more {
+  background: #F5F5F5;
+}
+.front-page .even-more .even-more-col {
+  padding: 50px 71px 89px 71px;
+}
+.front-page .even-more .even-more-col .title {
+  margin-bottom: 60px;
+  position: relative;
+}
+.front-page .even-more .even-more-col .title svg {
+  position: absolute;
+  left: 548px;
+  top: -6px;
+}
+.front-page .even-more .even-more-col .title h2 {
+  padding-bottom: 8px;
+  position: relative;
+  text-transform: none;
+  margin-bottom: 12px;
+}
+.front-page .even-more .even-more-col .title h2:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background: #543B53;
+  bottom: 0;
+}
+.front-page .even-more .even-more-col .title p {
+  color: #8C8C8C;
+  text-align: center;
+}
+.front-page .even-more .even-more-col .even-more-slider {
+  width: 100%;
+}
+.front-page .even-more .even-more-col .even-more-slider .swiper-slide.even .content {
+  gap: 23.11px;
+}
+.front-page .even-more .even-more-col .even-more-slider .swiper-slide.even .content .slide-even-wrapp {
+  width: 240px;
+  height: 360px;
+  position: relative;
+  cursor: pointer;
+}
+.front-page .even-more .even-more-col .even-more-slider .swiper-slide.even .content .slide-even-wrapp .img-hover {
+  display: none;
+}
+.front-page .even-more .even-more-col .even-more-slider .swiper-slide.even .content .slide-even-wrapp:hover .initial {
+  display: none;
+}
+.front-page .even-more .even-more-col .even-more-slider .swiper-slide.even .content .slide-even-wrapp:hover .img-hover {
+  display: block;
+}
+.front-page .even-more .even-more-col .even-more-slider .swiper-slide.even .content .slide-even-wrapp::after {
+  content: "";
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.98%, rgba(0, 0, 0, 0.59) 93.54%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.front-page .even-more .even-more-col .even-more-slider .swiper-slide.even .content .slide-even-wrapp h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Lovelace Trial";
+  font-size: 18px;
+  line-height: 117%; /* 21.06px */
+  letter-spacing: 1.8px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  text-transform: none;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.front-page .even-more .even-more-col .even-more-slider .swiper-slide.even .navigation.even-more {
+  width: 100%;
+  margin-top: 60px;
+  gap: 15px;
+}
+.front-page .calculate .calculate-content {
+  padding: 36px 0px 90px 36px;
+  position: relative;
+}
+.front-page .calculate .calculate-content .calculate-logo {
+  border: 8px solid #fff;
+  border-radius: 100px;
+  position: absolute;
+  margin-top: 15px;
+}
+.front-page .calculate .calculate-content .calculate-logo .calculate-wrapp {
+  width: 165px;
+  height: 165px;
+  background: #543B53;
+  border-radius: 100px;
+}
+.front-page .calculate .calculate-content .calculate-col {
+  padding: 26px 0px 32px 0px;
+  gap: 10px;
+  width: 710px;
+  height: 334px;
+  background: #543B53;
+  border-radius: 12px;
+  margin-top: 126px;
+}
+.front-page .calculate .calculate-content .calculate-col h2 {
+  color: #FFF;
+  text-transform: none;
+  margin-top: 40px;
+}
+.front-page .calculate .calculate-content .calculate-col p {
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.front-page .instagram {
+  background: #543B53;
+}
+.front-page .instagram .container {
+  padding: 51px 71px 71px 71px;
+}
+.front-page .instagram .container .instagram-content {
+  background: #fff;
+  padding: 56px 42px 89px 42px;
+  border-radius: 12px;
+  gap: 49px;
+}
+.front-page .instagram .container .instagram-content .instagram-wrapp {
+  gap: 37px;
+}
+.front-page .instagram .container .instagram-content .instagram-wrapp .instagram-top {
+  gap: 17px;
+  height: 61px;
+}
+.front-page .instagram .container .instagram-content .instagram-wrapp .instagram-top .logo {
+  background-color: #543B53;
+  width: 61px;
+  height: 61px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front-page .instagram .container .instagram-content .instagram-wrapp .instagram-top p {
+  color: #000;
+  text-align: center;
+  font-family: "Golos", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.front-page .instagram .container .instagram-content .instagram-wrapp .instagram-bottom {
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 21px;
+  grid-column-gap: 21px;
+}
+.front-page .instagram .container .instagram-content .instagram-wrapp .instagram-bottom img {
+  width: 226px;
+  height: 226px;
+}
+.front-page .instagram .container .instagram-content .button {
+  gap: 25px;
+}
+.front-page .instagram .container .instagram-content .button .load-more {
+  color: #543B53;
+  text-align: center;
+  font-size: 16px;
+  width: 147px;
+  height: 61px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 2px solid #543B53;
+}
+.front-page .instagram .container .instagram-content .button .view {
+  gap: 7px;
+  background: #543B53;
+  border-radius: 6px;
+  width: 241px;
+  height: 61px;
+  flex-shrink: 0;
+  border: none;
+}
+.front-page .venue {
+  background: #F5F5F5;
+}
+.front-page .venue .navigation.venue-more {
+  width: 100%;
+  margin-top: 60px;
+  gap: 15px;
+}
+.front-page .venue .venue-col {
+  padding: 50px 71px 89px 71px;
+}
+.front-page .venue .venue-col .title {
+  margin-bottom: 60px;
+}
+.front-page .venue .venue-col .title svg {
+  position: absolute;
+  top: 42px;
+  left: 645px;
+}
+.front-page .venue .venue-col .title h2 {
+  padding-bottom: 8px;
+  position: relative;
+  text-transform: none;
+  margin-bottom: 18px;
+}
+.front-page .venue .venue-col .title h2:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background: #543B53;
+  bottom: 0;
+}
+.front-page .venue .venue-col .title p {
+  color: #8C8C8C;
+  text-align: center;
+}
+.front-page .venue .venue-col .venue-slider {
+  width: 100%;
+}
+.front-page .venue .venue-col .venue-slider .swiper-slide.venue .content {
+  gap: 20px;
+}
+.front-page .venue .venue-col .venue-slider .swiper-slide.venue .content .slide-venue-wrapp {
+  width: 420px;
+  height: 334px;
+  position: relative;
+  cursor: pointer;
+}
+.front-page .venue .venue-col .venue-slider .swiper-slide.venue .content .slide-venue-wrapp .img-hover {
+  display: none;
+}
+.front-page .venue .venue-col .venue-slider .swiper-slide.venue .content .slide-venue-wrapp:hover .initial {
+  display: none;
+}
+.front-page .venue .venue-col .venue-slider .swiper-slide.venue .content .slide-venue-wrapp:hover .img-hover {
+  display: block;
+}
+.front-page .venue .venue-col .venue-slider .swiper-slide.venue .content .slide-venue-wrapp::after {
+  content: "";
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.98%, rgba(0, 0, 0, 0.59) 93.54%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+}
+.front-page .venue .venue-col .venue-slider .swiper-slide.venue .content .slide-venue-wrapp h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Lovelace Trial";
+  font-size: 18px;
+  line-height: 117%; /* 21.06px */
+  letter-spacing: 1.8px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  text-transform: none;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.front-page .contacts {
+  background-image: url(../../static/img/contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.front-page .contacts .contacts-wrap {
+  padding: 155px 0px 181px 0px;
+}
+.front-page .contacts .contacts-wrap .contacts-col {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.83);
+  width: 710px;
+  height: 316px;
+  flex-shrink: 0;
+}
+.front-page .contacts .contacts-wrap .contacts-col .container h2 {
+  text-transform: none;
+  position: relative;
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+}
+.front-page .contacts .contacts-wrap .contacts-col .container h2:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background: #543B53;
+  bottom: 0;
+  left: 110px;
+}
+.front-page .contacts .contacts-wrap .contacts-col .container .tel-mail {
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.front-page .contacts .contacts-wrap .contacts-col .container .tel-mail .tel,
+.front-page .contacts .contacts-wrap .contacts-col .container .tel-mail .mail {
+  gap: 10px;
+}
+.front-page .contacts .contacts-wrap .contacts-col .container .tel-mail .tel a,
+.front-page .contacts .contacts-wrap .contacts-col .container .tel-mail .mail a {
+  color: #414141;
+  font-size: 20px;
+  font-weight: 400;
+}
+.front-page .contacts .contacts-wrap .contacts-col .container .social {
+  gap: 20px;
+}
+.front-page .footer {
+  background: #543B53;
+  height: 45px;
+}
+.front-page .footer .wrapper {
+  height: 100%;
+}
+.front-page .footer .wrapper .footer-row {
+  gap: 14px;
+  height: 100%;
+}
+.front-page .footer .wrapper .footer-row p {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+}/*# sourceMappingURL=main.css.map */

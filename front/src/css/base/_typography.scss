@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Golos&family=Montserrat:wght@400&display=swap');
+
+@font-face {
+    font-family: 'Lovelace Trial';
+    src: url('../../static/fonts/Lovelace-Medium.ttf');
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: $title-ff;
+  font-weight: $base-fw;
+  line-height: $base-lh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $base-ff;
+  font-size: $fz-text;
+  font-weight: $base-fw;
+  line-height: $base-lh;
+  letter-spacing: 2px;
+  // @include phone {
+  //   font-size: 14px;
+  // }
+}
+
+span{
+  font-family: 'Lovelace Trial';
+  font-size: $fz-span;
+  font-style: $base-style;
+  font-weight: $base-fw;
+  line-height: $base-lh;; /* 21.152px */
+  letter-spacing: 1.6px;
+}
+
+h1, .h1 {
+  text-align: center;
+  font-size: $h1;
+  font-family: $base-ff;
+  font-weight: $base-fw;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+h2, .h2 {
+  font-size: $h2;
+  color: $purple;
+  font-family: $title-ff;
+  font-weight: $fw-600;
+
+}
+
+h3, .h3 {
+  font-size: $h1;
+  font-family: $title-ff;
+  font-weight: 600;
+}

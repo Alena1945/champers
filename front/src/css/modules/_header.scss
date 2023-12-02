@@ -1,0 +1,56 @@
+.main-header{
+    background: $purple;
+    height: 80px;
+    width: 100%;
+    .header-content{
+        height: 80px;
+        width: 100%;
+        .logo{
+            margin-right: 75px;
+            padding: 16px 0px;
+        }
+        .nav-list{
+            gap: 60px;
+            margin-right: 101px;
+            padding: 30px 0px;
+            .nav-item{
+                color: #F5F5F5;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+                cursor: pointer;
+                transition: all .3s ease-in;
+                &:hover{
+                    color: #4FFBF9;
+                }
+            }
+        }
+        .social{
+            gap: 20px;
+            padding: 20px 0px;
+            a{
+                svg{
+                    width: 40px;
+                    height: 40px;
+                    flex-shrink: 0;
+                    
+                }
+                &:hover{
+                    svg{
+                        circle {
+                            stroke: #fff;
+                            transition: all .3s ease-in;
+                        }
+                        path{
+                            fill: #fff;
+                            transition: all .3s ease-in;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
